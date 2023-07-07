@@ -1,0 +1,14 @@
+../src/adder.sv
+../src/alu.sv
+../src/brcomp.sv
+../src/control_unit.sv
+../src/immgen.sv
+../src/ins_mem.sv
+../src/lsu.sv
+../src/opa.sv
+../src/opb.sv
+../src/pc_sel.sv
+../src/pc.sv
+../src/regfile.sv
+../src/singlecycle.sv
+../src/wb.sv

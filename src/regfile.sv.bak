@@ -1,0 +1,29 @@
+/* verilator lint_off UNUSED */
+module regfile (
+    input logic clk_i,
+    input logic rst_ni,
+    input logic rd_wren_i,
+    input logic [4:0] rs1_addr_i,
+    input logic [4:0] rs2_addr_i,
+    input logic [4:0] rd_addr_i,
+    input logic [31:0] rd_data_i,
+
+    output logic [31:0] rs1_data_o,
+    output logic [31:0] rs2_data_o
+);
+
+  logic [31:0] memory[0:31];
+
+  //write operation
+  always_ff @(posedge clk_i) begin
+    if (rd_wren_i) 
+      if (!(rd_addr_i == 0)) memory[rd_addr_i] <= rd_data_i;
+  end
+
+  //read operation      
+  assign rs1_data_o = memory[rs1_addr_i];
+  assign rs2_data_o = memory[rs2_addr_i];
+
+endmodule : regfile
+/* verilator lint_off UNUSED */
+endmodule
