@@ -88,13 +88,13 @@ module control_unit #(
                 op_a_sel_o  = 1 ;
                 op_b_sel_o  = 1 ;
                 case (func3)
-                    BEQ: br_sel_o    = br_equal_i;
-                    BNE: br_sel_o    = !br_equal_i;
-                    BLT: br_sel_o    = br_less_i;
-                    BGE: br_sel_o    = !br_less_i;
-                    BLTU: br_sel_o   = br_less_i;
-                    BGEU: br_sel_o   = !br_less_i;
-                    default: br_sel_o = 'x;
+                    BEQ:     br_sel_o    = br_equal_i;
+                    BNE:     br_sel_o    = !br_equal_i;
+                    BLT:     br_sel_o    = br_less_i;
+                    BGE:     br_sel_o    = !br_less_i;
+                    BLTU:    br_sel_o    = br_less_i;
+                    BGEU:    br_sel_o    = !br_less_i;
+                    default: br_sel_o    = 'x;
                 endcase
                 br_unsigned_o = ((func3 == BLTU) || (func3 == BGEU));
             end

@@ -145,7 +145,7 @@ inst_memory #( .IMEM_W(13) ) ins_mem1 (
     case (br_sel)
       `CTL_PC_PC4:      nxt_pc = pc_four;
       `CTL_PC_ALU_DATA: nxt_pc = alu_data;
-      default: nxt_pc = 32'bx;
+      default: nxt_pc = 32'x;
     endcase
   //operand_a_sel mux
   always_comb

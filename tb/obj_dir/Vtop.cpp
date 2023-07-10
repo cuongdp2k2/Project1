@@ -26,7 +26,6 @@ Vtop::Vtop(VerilatedContext* _vcontextp__, const char* _vcname__)
     , io_hex6_o{vlSymsp->TOP.io_hex6_o}
     , io_hex7_o{vlSymsp->TOP.io_hex7_o}
     , pc_debug_o{vlSymsp->TOP.pc_debug_o}
-    , instr_debug_o{vlSymsp->TOP.instr_debug_o}
     , rootp{&(vlSymsp->TOP)}
 {
     // Register model with the context

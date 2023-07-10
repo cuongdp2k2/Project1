@@ -39,7 +39,7 @@ module immgen (
       else imm_o = {20'h0, instr_i[31:25], instr_i[11:7]};
 
     default:
-      imm_o = 32'bx;
+      imm_o = 32'x;
     endcase
 
 endmodule : immgen

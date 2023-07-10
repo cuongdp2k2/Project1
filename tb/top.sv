@@ -15,9 +15,10 @@ module top
   output logic [31:0]      io_hex5_o ,
   output logic [31:0]      io_hex6_o ,
   output logic [31:0]      io_hex7_o ,
-
+  // debug
+  //output logic pc_sel_debug_o , br_equal_debug_o , br_less_debug_o,
   output logic [31:0]      pc_debug_o,
-  output logic [31:0]      instr_debug_o,
+
   // Clock and asynchronous reset active low
   input  logic             clk_i     ,
   input  logic             rst_ni
@@ -36,10 +37,11 @@ module top
     .io_hex5_o (io_hex5_o ),
     .io_hex6_o (io_hex6_o ),
     .io_hex7_o (io_hex7_o ),
-    .pc_debug_o(pc_debug_o),
-    .instr_debug_o(instr_debug_o),
+    
     .clk_i     (clk_i     ),
-    .rst_ni    (rst_ni    )
+    .rst_ni    (rst_ni    ),
+
+    .pc_debug_o(pc_debug_o) 
   );
 
 endmodule : top

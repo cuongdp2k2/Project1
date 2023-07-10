@@ -6,6 +6,12 @@ module pc_sel(
 
     // output
     output logic [31:0] pc_o 
-);
-    assign pc_o = (br_sel_i == '0) ? pc_four_i : pc_alu_i ;
+) ; 
+    always_comb begin 
+        if( br_sel_i == 1'b0 ) begin
+            pc_o = pc_four_i ;
+        end else begin
+            pc_o = pc_alu_i ; 
+        end
+    end
 endmodule : pc_sel

@@ -26,4 +26,4 @@ module regfile (
 
 endmodule : regfile
 /* verilator lint_off UNUSED */
-
+endmodule
