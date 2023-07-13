@@ -1,9 +1,9 @@
 ../src/alu.sv
 ../src/brcomp.sv
-../src/constants.sv
 ../src/ctrl_unit.sv
 ../src/immgen.sv
 ../src/inst_memory.sv
 ../src/lsu.sv
 ../src/regfile.sv
 ../src/singlecycle.sv
+../src/constants.sv

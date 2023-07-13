@@ -1,0 +1,58 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Wed Jul 12 09:59:29 2023
+[*]
+[dumpfile] "/home/Training/single-circle-test/tb/wave.fst"
+[dumpfile_mtime] "Wed Jul 12 09:58:04 2023"
+[dumpfile_size] 1218894
+[savefile] "/home/Training/single-circle-test/tb/wave.gtkw"
+[timestart] 298
+[size] 1032 678
+[pos] 5 -33
+*-5.700000 379 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[treeopen] TOP.top.
+[treeopen] TOP.top.singleCycle.
+[sst_width] 276
+[signals_width] 158
+[sst_expanded] 1
+[sst_vpaned_height] 172
+@28
+TOP.clk_i
+@22
+TOP.pc_debug_o[31:0]
+@23
+TOP.top.singleCycle.regfile1.memory[0][31:0]
+TOP.top.singleCycle.regfile1.memory[1][31:0]
+TOP.top.singleCycle.regfile1.memory[2][31:0]
+TOP.top.singleCycle.regfile1.memory[3][31:0]
+TOP.top.singleCycle.regfile1.memory[4][31:0]
+TOP.top.singleCycle.regfile1.memory[5][31:0]
+TOP.top.singleCycle.regfile1.memory[6][31:0]
+TOP.top.singleCycle.regfile1.memory[7][31:0]
+TOP.top.singleCycle.regfile1.memory[8][31:0]
+TOP.top.singleCycle.regfile1.memory[9][31:0]
+TOP.top.singleCycle.regfile1.memory[10][31:0]
+TOP.top.singleCycle.regfile1.memory[11][31:0]
+TOP.top.singleCycle.regfile1.memory[12][31:0]
+TOP.top.singleCycle.regfile1.memory[13][31:0]
+TOP.top.singleCycle.regfile1.memory[14][31:0]
+TOP.top.singleCycle.regfile1.memory[15][31:0]
+TOP.top.singleCycle.regfile1.memory[16][31:0]
+TOP.top.singleCycle.regfile1.memory[17][31:0]
+TOP.top.singleCycle.regfile1.memory[18][31:0]
+TOP.top.singleCycle.regfile1.memory[19][31:0]
+TOP.top.singleCycle.regfile1.memory[20][31:0]
+TOP.top.singleCycle.regfile1.memory[21][31:0]
+TOP.top.singleCycle.regfile1.memory[22][31:0]
+TOP.top.singleCycle.regfile1.memory[23][31:0]
+TOP.top.singleCycle.regfile1.memory[24][31:0]
+TOP.top.singleCycle.regfile1.memory[25][31:0]
+TOP.top.singleCycle.regfile1.memory[26][31:0]
+TOP.top.singleCycle.regfile1.memory[27][31:0]
+TOP.top.singleCycle.regfile1.memory[28][31:0]
+TOP.top.singleCycle.regfile1.memory[29][31:0]
+TOP.top.singleCycle.regfile1.memory[30][31:0]
+TOP.top.singleCycle.regfile1.memory[31][31:0]
+[pattern_trace] 1
+[pattern_trace] 0
