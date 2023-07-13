@@ -6,7 +6,6 @@ module adder(
     // output
     output logic [31:0] data_o 
 );
-    always_comb begin
-        data_o = data1_i + data2_i ;
-    end
+    assign  data_o = data1_i + data2_i ;
+    
 endmodule : adder

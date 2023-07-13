@@ -34,6 +34,7 @@ module singlecycle (
   logic [4:0] rs2_addr;
   logic [4:0] rd_addr;
 
+  // control logic 
   logic br_sel;
   logic br_unsigned;
   logic br_less;
@@ -46,18 +47,19 @@ module singlecycle (
   logic [2:0] mem_op;
   logic [3:0] alu_op;
 
+  // instruction decode
   assign rs1_addr = instr[19:15];
   assign rs2_addr = instr[24:20];
   assign rd_addr  = instr[11:7];
 
-inst_memory #( .IMEM_W(13) ) ins_mem1 (
-    //inputs
-    .clk_i(clk_i),
-    .rst_ni(rst_ni),
-    .paddr_i(pc[12:0]),
-    //output
-    .prdata_o(instr)
-);
+  inst_memory #( .IMEM_W(13) ) ins_mem1 (
+      //inputs
+      .clk_i(clk_i),
+      .rst_ni(rst_ni),
+      .paddr_i(pc[12:0]),
+      //output
+      .prdata_o(instr)
+  );
 
   regfile regfile1 (
       .clk_i(clk_i),
